@@ -63,23 +63,9 @@ function lib:init(ti, dosplash, visiblekey, deleteprevious)
         uc_22.CornerRadius = UDim.new(0, 18)
         uc_22.Parent = splash
 
-        local sicon = Instance.new("ImageLabel")
-        sicon.Name = "sicon"
-        sicon.Parent = splash
-        sicon.AnchorPoint = Vector2.new(0.5, 0.5)
-        sicon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-        sicon.BackgroundTransparency = 1
-        sicon.Position = UDim2.new(0.5, 0, 0.5, 0)
-        sicon.Size = UDim2.new(0, 191, 0, 190)
-        sicon.ZIndex = 40
-        sicon.Image = "rbxassetid://12621719043"
-        sicon.ScaleType = Enum.ScaleType.Fit
-        sicon.TileSize = UDim2.new(1, 0, 20, 0)
-
         local ug = Instance.new("UIGradient")
         ug.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.01, Color3.fromRGB(61, 61, 61)), ColorSequenceKeypoint.new(0.47, Color3.fromRGB(41, 41, 41)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
         ug.Rotation = 90
-        ug.Parent = sicon
 
         local sshadow = Instance.new("ImageLabel")
         sshadow.Name = "sshadow"
